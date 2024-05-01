@@ -72,7 +72,7 @@ if st.session_state.logged == True:
                         stream=True
                     )
 
-                st.write(response)
+                st.info(response)
                 streamed_text = " "
                 for chunk in response:
                     chunk_content = chunk.choices[0].delta.content
