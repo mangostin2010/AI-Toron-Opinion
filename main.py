@@ -53,7 +53,6 @@ if st.session_state.logged == True:
                         temperature=0.7,
                         #max_tokens=64,
                         top_p=1,
-                        stream=True
                     )
                   
                 if rebuttal is True:
@@ -69,7 +68,6 @@ if st.session_state.logged == True:
                         temperature=0.7,
                         #max_tokens=64,
                         top_p=1,
-                        stream=True
                     )
 
                 st.info(response)
