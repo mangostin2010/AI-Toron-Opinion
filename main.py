@@ -72,7 +72,7 @@ if st.session_state.logged == True:
                     )
 
                 streamed_text = " "
-                chunk
+                response
                 for chunk in response:
                     chunk_content = chunk.choices[0].delta.content
                     if chunk_content is not None:
