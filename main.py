@@ -55,6 +55,7 @@ if st.session_state.logged == True:
                         top_p=1,
                         stream=True
                     )
+                  st.write(response)
                 if rebuttal is True:
                     response = client.chat.completions.create(
                         model="gpt-3.5-turbo",
@@ -70,9 +71,9 @@ if st.session_state.logged == True:
                         top_p=1,
                         stream=True
                     )
-
+                  st.write(response)
+                
                 streamed_text = " "
-                response
                 for chunk in response:
                     chunk_content = chunk.choices[0].delta.content
                     if chunk_content is not None:
