@@ -77,5 +77,6 @@ if st.session_state.logged == True:
                     if chunk_content is not None:
                         streamed_text = streamed_text + chunk_content
                         placeholder.info(streamed_text)
+                    chunk
             else:
                 st.error('모든 양식을 작성하여 주십시오.')
